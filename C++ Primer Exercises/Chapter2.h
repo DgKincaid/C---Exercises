@@ -1,10 +1,19 @@
-#pragma once
-
+#include <iostream>
 #include <string>
 
-#ifndef CHAPTER2_H_
-#define CHAPTER2_H_
+#ifndef CHAPTER2_H
+#define CHAPTER2_H
 
-std::string helloWorld();
+class Chapter2
+{
+public:
+	void DisplayAddress(); //Question 1
+	int FurlongConverter(); //Question 2
+	void TextRepeater(); //Question 3
+	void AgeInMonths(); //Question 4
 
-#endif // !1
+private:
+	void RepeatText(std::string text, int times);
+};
+
+#endif
